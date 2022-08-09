@@ -1,0 +1,121 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contain {
+    display: grid;
+    grid-template: 
+        'calc calc calc calc'
+        'sqrt pi power fat'
+        'clear op close division'
+        'nine eight seven multi'
+        'six five four subt'
+        'three two one plus'
+        'ze decim percent equals';
+    grid-gap: 4px;
+    padding: 12px;
+    border: solid 1px;
+    border-radius: 4px;
+}
+
+h1 {
+    font-size: 36px;
+}
+button {
+    font-size: 18px;
+    width: 50px;
+    height: 40px;
+    cursor: pointer;
+    border: solid 1px lightslategray;
+    border-radius: 5px;
+}
+button:hover {
+    background-color: beige;
+}
+
+/* Numbers id */
+#decimal {
+    grid-area: decim;
+}
+#one {
+    grid-area: one;
+}
+#two {
+    grid-area: two;
+}
+#three{
+    grid-area: three;
+}
+#four {
+    grid-area: four;
+}
+#five {
+    grid-area: five;
+}
+#six {
+    grid-area: six;
+}
+#seven {
+    grid-area: seven;
+}
+#eight {
+    grid-area: eight;
+}
+#nine {
+    grid-area: nine;
+}
+#zero {
+    grid-area: ze;
+}
+
+/* Operation id */
+#calc {
+    grid-area: calc;
+    height: 40px;
+    border: solid 1px lightgray;
+    padding: 5px;
+}
+#fat {
+    grid-area: fat;
+}
+#pi {
+    grid-area: pi;
+}
+#power {
+    grid-area: power;
+}
+#sqrt {
+    grid-area: sqrt;
+}
+#clear {
+    grid-area: clear;
+}
+#parent-open {
+    grid-area: op;
+}
+#parent-close {
+    grid-area: close;
+}
+#percent {
+    grid-area: percent;
+}
+#division {
+    grid-area: division;
+}
+#multiply {
+    grid-area: multi;
+}
+#subtract {
+    grid-area: subt;
+}
+#plus {
+    grid-area: plus;
+}
+#equal {
+    grid-area: equals;
+}
