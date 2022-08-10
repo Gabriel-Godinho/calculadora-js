@@ -6,14 +6,14 @@ function character(num) {
 
 function clearBox() {
     
-    let caixa = document.getElementById("calc")
-    caixa.value = null
+    let box = document.getElementById("calc")
+    box.value = null
 }
 
 function getResult() {
     
     let box = document.getElementById("calc")
-    let expression = box.value
+    let expression = box.value.replace("%", "/100")
     
     if (eval(expression) != Infinity) {
         box.value = eval(expression)
@@ -33,10 +33,10 @@ function squareRoot() {
     let box = document.getElementById("calc")
     let expression = box.value
 
-    if (expression >= 0) {
+    if (eval(expression) >= 0) {
         box.value = Math.sqrt(eval(expression))
     } else {
-        box.value = "Imaginary Number"
+        box.value = "Imaginary Number!"
     }
     
 }
