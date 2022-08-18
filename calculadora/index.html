@@ -28,10 +28,14 @@
     </nav>
     <h1><strong>Calculadora</strong></h1>
     <main class="contain">
-        <!-- Text Area -->
+        <!-- Caixa de Texto -->
         <input type="text" id="calc" disabled> 
 
-        <!-- Operations -->
+        <!-- Operações -->
+        <button id="sin" onclick="sinValue()">sin</button>
+        <button id="cos" onclick="cosValue()">cos</button>
+        <button id="tg" onclick="tanValue()">tan</button>
+        <button id="euler" onclick="eulerValue()">e</button>
         <button id="fat" onclick="fat()">!</button>
         <button id="pi" onclick="piValue()">π</button>
         <button id="power" onclick="character('**')">^</button>
@@ -46,7 +50,7 @@
         <button id="plus" onclick="character('+')">+</button>
         <button id="equal" onclick="getResult()">=</button>
 
-        <!-- Numbers -->
+        <!-- Números -->
         <button id="one" onclick="character(1)">1</button>
         <button id="two" onclick="character(2)">2</button>
         <button id="three" onclick="character(3)">3</button>
