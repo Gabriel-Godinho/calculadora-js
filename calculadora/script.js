@@ -64,36 +64,40 @@ function fat() {
 
 }
 
+// Seno não exato
 function sinValue() {
 
     let box = document.getElementById("calc")
-    let expression = box.value
+    let radius = eval(box.value) * Math.PI/180;
 
-    box.value = Math.sin(eval(expression))
+    box.value = Math.sin(radius)
 
 }
 
+// Cosseno não exato
 function cosValue() {
 
     let box = document.getElementById("calc")
-    let expression = box.value
+    let radius = eval(box.value) * Math.PI/180;
 
-    box.value = Math.cos(eval(expression))
+    box.value = Math.cos(radius)
 
 }
 
+// Tangente não exata
 function tanValue() {
 
     let box = document.getElementById("calc")
-    let expression = box.value
+    let radius = eval(box.value) * Math.PI/180;
 
-    box.value = Math.tan(eval(expression))
+    box.value = Math.tan(radius)
 
 }
 
+// Número de Euler
 function eulerValue() {
 
     let box = document.getElementById("calc")
-    box.value = Math.E
+    box.value += Math.E
 
 }
